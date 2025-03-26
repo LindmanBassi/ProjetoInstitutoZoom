@@ -1,0 +1,11 @@
+services:
+  mysql:
+    container_name: 'bassi2-mysql'
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=bassidb'
+      - 'MYSQL_PASSWORD=123'
+      - 'MYSQL_ROOT_PASSWORD=123'
+      - 'MYSQL_USER=bassi'
+    ports:
+      - '3306:3306'
